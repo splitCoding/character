@@ -23,9 +23,9 @@ document.addEventListener('keydown', characterMove);
 
 function characterMove(e){
 
-  e.preventDefault();
   audio.play();
   if(e.key === 'ArrowDown'){
+    e.preventDefault();
     ch_top += amount;
     if(ch_top >= TOP_MAX){ ch_top = TOP_MAX; }
     if(ch_top <= TOP_MIN){ ch_top = TOP_MIN; }
@@ -33,6 +33,7 @@ function characterMove(e){
   } 
   
   else if (e.key === 'ArrowUp'){
+    e.preventDefault();
     ch_top -= amount;
     if(ch_top >= TOP_MAX){ ch_top = TOP_MAX; }
     if(ch_top <= TOP_MIN){ ch_top = TOP_MIN; }
@@ -40,6 +41,7 @@ function characterMove(e){
   } 
   
   else if(e.key === 'ArrowLeft'){
+    e.preventDefault();
     ch_left -= amount;
     if(ch_left >= LEFT_MAX){ ch_left = LEFT_MAX; }
     if(ch_left <= LEFT_MIN){ ch_left = LEFT_MIN; }
@@ -48,6 +50,7 @@ function characterMove(e){
   } 
   
   else if(e.key === 'ArrowRight'){
+    e.preventDefault();
     ch_left += amount;
     if(ch_left >= LEFT_MAX){ ch_left = LEFT_MAX;} 
     if(ch_left <= LEFT_MIN){ ch_left = LEFT_MIN; }
