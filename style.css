@@ -30,8 +30,12 @@ body{
   top : 634px;
   animation : 1s ease-in-out infinite shake;
 }
-.penguin-container{
-  
+audio{
+  width : 250px;
+  height : 50px;
+  position : fixed;
+  top : 20px;
+  right : 30px;
 }
 .penguin{
   width : 240px;

@@ -1,11 +1,9 @@
 const character = document.querySelector('.character').style;
 const character2 = document.querySelector('.character2').style;
 const penguin = document.querySelector('.penguin-container').style;
-
 let ch_top = 472;
 let ch_left = 469;
 
-penguin.transform = "scaleX(-1)";
 character.top = `${ch_top}px`;
 character.left =  `${ch_left}px`;
 
@@ -16,13 +14,17 @@ const LEFT_MIN = 129;
 
 const amount = 6;
 
-document.addEventListener('keydown', characterMove);
+penguin.transform = "scaleX(-1)";
 
-character2.addEventListener()
+let audio = document.querySelector("audio");
+audio.volume = 0.11;
+
+document.addEventListener('keydown', characterMove);
 
 function characterMove(e){
 
   e.preventDefault();
+  audio.play();
   if(e.key === 'ArrowDown'){
     ch_top += amount;
     if(ch_top >= TOP_MAX){ ch_top = TOP_MAX; }
@@ -53,3 +55,4 @@ function characterMove(e){
     character.transform = "scaleX(1)";
   }
 }
+
