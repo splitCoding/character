@@ -7,9 +7,6 @@ let ch_left = 469;
 character.top = `${ch_top}px`;
 character.left =  `${ch_left}px`;
 
-character2.top = `${ch_top}px`;
-character2.left =  `${ch_left-300}px`;
-
 const TOP_MAX = 550;
 const TOP_MIN = 434;
 const LEFT_MAX = 865;

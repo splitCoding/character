@@ -17,26 +17,43 @@ body{
   position : absolute;
 }
 .character2{
-  width : 350px;
-  height : 350px;
+  width : 290px;
+  height : 290px;
   position : absolute;
   animation : 1.5s ease-in-out infinite jump;
 }
-
-@keyframes jump{
+.rabbit{
+  width : 180px;
+  height : 180px;
+  position : absolute;
+  top : 634px;
+  animation : 1s ease-in-out infinite shake;
+}
+@keyframes shake {
   0%{
-    top : 462px
-  }
-  11%{
-    top : 462px
+    transform : rotate(-3deg)
   }
   50%{
-    top : 382px;
-  }
-  80%{
-    top :462px;
+    transform : rotate(3deg)
   }
   100%{
-    top :462px;
+    transform : rotate(-3deg)
+  }
+}
+@keyframes jump{
+  0%{
+    top : 472px
+  }
+  11%{
+    top : 472px
+  }
+  50%{
+    top : 392px;
+  }
+  80%{
+    top :472px;
+  }
+  100%{
+    top :472px;
   }
 }
