@@ -11,11 +11,49 @@ body{
   background-repeat : no-repeat;
   position : relative;
 }
-
+.none {
+  display : none;
+}
+.appear{
+  animation : 0.5s ease-in-out appear forwards;
+}
+@keyframes appear {
+  from{
+    opacity : 0;
+  }
+  to{
+    opacity : 1;
+  }
+}
+.disappear{
+  animation : 0.5s ease-in-out disappear forwards;
+}
+@keyframes disappear {
+  from{
+    opacity : 1;
+  }
+  to{
+    opacity : 0;
+  }
+}
+.fire{
+  width : 100px;
+  height : 100px;
+  position : absolute;
+  bottom : 50px;
+  left : 250px;
+}
 .character{
   width : 430px;
   height : 430px;
   position : absolute;
+}
+.character_fire{
+  width : 430px;
+  height : 430px;
+  position : absolute;
+  top : 472px;
+  left : 129px;
 }
 .character2{
   width : 270px;
