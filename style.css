@@ -12,13 +12,14 @@ body{
 }
 
 .character{
-  width : 400px;
-  height : 400px;
+  width : 430px;
+  height : 430px;
   position : absolute;
 }
 .character2{
-  width : 290px;
-  height : 290px;
+  width : 270px;
+  height : 270px;
+  left : 30px;
   position : absolute;
   animation : 1.5s ease-in-out infinite jump;
 }
@@ -29,15 +30,26 @@ body{
   top : 634px;
   animation : 1s ease-in-out infinite shake;
 }
+.penguin-container{
+  
+}
+.penguin{
+  width : 240px;
+  height : 240px;
+  position : absolute;
+  top : 644px;
+  right : 1200px;
+  animation : 1s ease-in-out infinite shake;
+}
 @keyframes shake {
   0%{
-    transform : rotate(-3deg)
+    transform : rotate(-2deg)
   }
   50%{
-    transform : rotate(3deg)
+    transform : rotate(2deg)
   }
   100%{
-    transform : rotate(-3deg)
+    transform : rotate(-2deg)
   }
 }
 @keyframes jump{
@@ -48,7 +60,7 @@ body{
     top : 472px
   }
   50%{
-    top : 392px;
+    top : 402px;
   }
   80%{
     top :472px;

@@ -1,16 +1,18 @@
 const character = document.querySelector('.character').style;
 const character2 = document.querySelector('.character2').style;
+const penguin = document.querySelector('.penguin-container').style;
 
 let ch_top = 472;
 let ch_left = 469;
 
+penguin.transform = "scaleX(-1)";
 character.top = `${ch_top}px`;
 character.left =  `${ch_left}px`;
 
-const TOP_MAX = 550;
-const TOP_MIN = 434;
-const LEFT_MAX = 865;
-const LEFT_MIN = 169;
+const TOP_MAX = 510;
+const TOP_MIN = 404;
+const LEFT_MAX = 885;
+const LEFT_MIN = 129;
 
 const amount = 6;
 
