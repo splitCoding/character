@@ -1,0 +1,19 @@
+html{
+  width : 900px;
+  height : 900px;
+}
+
+body{
+  width : 900px;
+  height : 900px;
+  background-image: url('./img/bg1.jpg');
+  background-size: cover;
+  background-repeat : no-repeat;
+}
+
+.character{
+  color : white;
+  width : 400px;
+  height : 400px;
+  position : absolute;
+}
